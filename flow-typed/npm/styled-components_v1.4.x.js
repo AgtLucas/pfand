@@ -11,7 +11,6 @@ type $npm$styledComponents$StyledComponent = (
   ...interpolations: Array<$npm$styledComponents$Interpolation>
 ) => ReactClass<*>;
 
-
 type $npm$styledComponents$Theme = {[key: string]: mixed};
 type $npm$styledComponents$ThemeProviderProps = {
   theme: ((outerTheme: $npm$styledComponents$Theme) => void) | $npm$styledComponents$Theme
