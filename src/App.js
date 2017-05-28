@@ -29,7 +29,7 @@ class App extends Component {
   }
 
   cashRemaining (numberOfBottles: number) {
-    let cashRemaining = this.state.money - this.state.money
+    let cashRemaining = this.state.money - numberOfBottles * this.state.waterPrice
     return round(cashRemaining)
   }
 
@@ -44,6 +44,7 @@ class App extends Component {
     let cashForTare = this.moneyForTare(bottles)
     let cash = cashRemaining + cashForTare
     let total = round(cash)
+    console.log(cashRemaining)
     this.setState({
       bottlesForMoney: bottles,
       cashRemaining,
