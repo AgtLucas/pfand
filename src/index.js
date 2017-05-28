@@ -4,6 +4,6 @@ import App from './App'
 import './styles'
 
 render(
-  <h1>Foo!</h1>,
+  <App />,
   document.getElementById('root')
 )
